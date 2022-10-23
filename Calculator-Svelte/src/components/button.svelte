@@ -14,6 +14,8 @@ export let highlight: boolean = false
 
 <style>
 .button{
+  margin: 0;
+  border: 1px solid var(--color-back);
   flex-basis: 25%;
 }
 .triple{
