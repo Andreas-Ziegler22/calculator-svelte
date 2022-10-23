@@ -9,7 +9,7 @@
 
 
 <div class="calculator">
-  <Display valueD="123"/>
+  <Display valueD="0123456789"/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
@@ -53,4 +53,5 @@
     flex-direction: column;
   }
 
+  
 </style>
