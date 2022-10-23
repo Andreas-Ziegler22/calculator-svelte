@@ -10,7 +10,7 @@ export let text: String
 
 <style>
 .button{
-  
+  flex-basis: 25%;
 }
 
 </style>

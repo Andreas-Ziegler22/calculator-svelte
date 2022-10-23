@@ -9,14 +9,21 @@
 
 <div class="calculator">
   <Line>
+    <Button text="AC"/>
+    <Button text="/"/>
+    
+  </Line>
+  <Line>
   <Button text="7"/>
   <Button text="8"/>
   <Button text="9"/>
+  <Button text="*"/>
 </Line>
 <Line>
   <Button text="4"/>
   <Button text="5"/>
   <Button text="6"/>
+  <Button text="+"/>
 </Line>
 </div>
 
