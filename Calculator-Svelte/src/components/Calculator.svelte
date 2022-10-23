@@ -14,7 +14,14 @@
 
 <style>
   .calculator{
+    background-color: var(--color-back);
+    height: 220px;
+    width: 150px;
+
+
+
     display: flex;
+    flex-direction: column;
   }
 
 </style>

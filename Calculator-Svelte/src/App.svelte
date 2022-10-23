@@ -10,6 +10,13 @@
 </main>
 
 <style>
+	:global(body){
+		background-color: black;
+	}
+
+	:root{
+		--color-back: #017dbc
+	}
 	main {
 		display:flex;
 		justify-content: center;
