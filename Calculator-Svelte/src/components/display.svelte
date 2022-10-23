@@ -34,7 +34,7 @@
   .s-17 {font-size: 0.87rem;}
   .s-18 {font-size: 0.83rem;}
   .s-19 {font-size: 0.78rem;}
-  .s-12 {font-size: 0.74rem;}
+  .s-12 {font-size: 0.72rem;}
 
   .small {font-size: 0.6rem;}
 </style>

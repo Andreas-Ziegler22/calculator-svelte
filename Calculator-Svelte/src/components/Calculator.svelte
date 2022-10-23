@@ -9,7 +9,7 @@
 
 
 <div class="calculator">
-  <Display valueD="0123456789"/>
+  <Display valueD="0123456789012345678"/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
