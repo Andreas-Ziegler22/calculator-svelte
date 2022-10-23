@@ -9,32 +9,32 @@
 
 <div class="calculator">
   <Line>
-    <Button text="AC" triple/>
-    <Button text="/"/>
+    <Button highlight text="AC" triple/>
+    <Button operational text="/"/>
     
   </Line>
   <Line>
   <Button text="7"/>
   <Button text="8"/>
   <Button text="9"/>
-  <Button text="*"/>
+  <Button operational text="*"/>
 </Line>
 <Line>
   <Button text="4"/>
   <Button text="5"/>
   <Button text="6"/>
-  <Button text="+"/>
+  <Button operational text="+"/>
 </Line>
 <Line>
   <Button text="1"/>
   <Button text="2"/>
   <Button text="3"/>
-  <Button text="-"/>
+  <Button operational text="-"/>
 </Line>
 <Line>
   <Button text="0" duble/>
   <Button text=","/>
-  <Button text="="/>
+  <Button highlight text="="/>
 </Line>
 </div>
 
