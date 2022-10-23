@@ -32,9 +32,9 @@
   <Button text="-"/>
 </Line>
 <Line>
-  <Button text="0"/>
+  <Button text="0" duble/>
   <Button text=","/>
-  <Button text="=" duble/>
+  <Button text="="/>
 </Line>
 </div>
 
