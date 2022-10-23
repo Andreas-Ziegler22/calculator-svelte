@@ -1,10 +1,10 @@
 <script lang="ts">
-
+export let text = ''
 </script>
 
 <button class="button">
 
-Text
+{text}
 </button>
 
 

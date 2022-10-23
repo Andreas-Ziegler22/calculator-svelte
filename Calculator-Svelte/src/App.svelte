@@ -1,11 +1,13 @@
 <script lang="ts">
   import Button from "./components/button.svelte";
-
+	
 
 </script>
 
 <main>
-	<Button/>
+	<Button text = "7"/>
+	<Button text = "8"/>
+	<Button text = "9"/>
 </main>
 
 <style>
