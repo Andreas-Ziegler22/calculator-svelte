@@ -43,7 +43,8 @@
     background-color: var(--color-back);
     height: 220px;
     width: 150px;
-
+    padding: 10px;
+    border-radius: 10px;
 
 
     display: flex;
