@@ -9,7 +9,7 @@
 
   let calc = new CalculatorModel()
 
-  const numbertyped = (num: string) => calc = calc.numbertyped(num)
+  const numberTyped = (num: string) => calc = calc.numberTyped(num)
   const dotNotationTyped = (op: string) => calc = calc.dotNotationTyped(op)
 
 </script>
@@ -24,25 +24,25 @@
     
   </Line>
   <Line>
-  <Button text="7" onClick={numbertyped}/>
-  <Button text="8" onClick={numbertyped}/>
-  <Button text="9" onClick={numbertyped}/>
+  <Button text="7" onClick={numberTyped}/>
+  <Button text="8" onClick={numberTyped}/>
+  <Button text="9" onClick={numberTyped}/>
   <Button operational text="*"/>
 </Line>
 <Line>
-  <Button text="4" onClick={numbertyped}/>
-  <Button text="5" onClick={numbertyped}/>
-  <Button text="6" onClick={numbertyped}/>
+  <Button text="4" onClick={numberTyped}/>
+  <Button text="5" onClick={numberTyped}/>
+  <Button text="6" onClick={numberTyped}/>
   <Button operational text="+"/>
 </Line>
 <Line>
-  <Button text="1" onClick={numbertyped}/>
-  <Button text="2" onClick={numbertyped}/>
-  <Button text="3" onClick={numbertyped}/>
+  <Button text="1" onClick={numberTyped}/>
+  <Button text="2" onClick={numberTyped}/>
+  <Button text="3" onClick={numberTyped}/>
   <Button operational text="-"/>
 </Line>
 <Line>
-  <Button text="0" duble onClick={numbertyped}/>
+  <Button text="0" duble onClick={numberTyped}/>
   <Button text="," onClick={dotNotationTyped} />
   <Button highlight text="="/>
 </Line>

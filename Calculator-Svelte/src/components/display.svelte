@@ -1,12 +1,13 @@
 <script lang="ts">
+  
   export let valueD: string
 
-  // $: changeFontSize = valueD.length > 20 ? 'small' : `s-${valueD.length}`
+  $: changeFontSize = valueD.length > 20 ? 'small' : `s-${valueD.length}`
 </script>
 
-<!-- <div class={`displayD ${changeFontSize}`}></div>
+<div class={`displayD ${changeFontSize}`}></div>
   <span>{valueD}</span>
-</div> -->
+</div>
 
 <style>
   .displayD{
