@@ -4,7 +4,7 @@
  
   import Button from "./button.svelte"
   import Line from "./Line.svelte";
-  import Display from "./display.svelte";
+  import Display from "./Display.svelte"
 
 
   let calc = new CalculatorModel()
