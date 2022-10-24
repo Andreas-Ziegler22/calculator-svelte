@@ -29,4 +29,13 @@ export default class CalculatorModel {
       no_clean_display
     );
   }
+
+  dotNotationTyped(newValue: string) {
+    return new CalculatorModel(
+      this.#value?.includes(".") ? this.#value : this.#value + ".",
+      this.#accumulator,
+      this.#actionCalc,
+      no_clean_display
+    );
+  }
 }
