@@ -2,10 +2,11 @@
   
   export let valueD: string
 
+// here is the problem  and trying to figure out how to solve it message at console -> Uncaught TypeError: Cannot read properties of undefined (reading 'length')
   $: changeFontSize = valueD.length > 20 ? 'small' : `s-${valueD.length}`
 </script>
 
-<div class={`displayD ${changeFontSize}`}></div>
+<div class={`displayD ${changeFontSize}`}>
   <span>{valueD}</span>
 </div>
 
