@@ -1,23 +1,19 @@
 <script lang="ts">
- import CalculatorModel from "../model/CalculatorModel";
 
- 
-  import Button from "./button.svelte"
-  import Line from "./Line.svelte";
-  import Display from "./Display.svelte"
+import Button from "./Button.svelte"
+import Line from "./Line.svelte"
+import DisplayD from "./DisplayD.svelte"
+  import CalculatorModel from "../model/CalculatorModel";
 
+let calc = new CalculatorModel()
 
-  let calc = new CalculatorModel()
-
-  const numberTyped = (num: string) => calc = calc.numberTyped(num)
+const numberTyped = (num: string) => calc = calc.numberTyped(num)
   const dotNotationTyped = (op: string) => calc = calc.dotNotationTyped(op)
 
 </script>
 
-
-
 <div class="calculator">
-  <Display valueD={calc.value}/>
+  <DisplayD valueD={calc.value}/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
@@ -47,6 +43,7 @@
   <Button highlight text="="/>
 </Line>
 </div>
+
 
 <style>
   .calculator{
