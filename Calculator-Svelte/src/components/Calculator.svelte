@@ -4,6 +4,11 @@
   import Display from "./display.svelte";
   import Line from "./Line.svelte";
 
+
+  function typedNumber(number: string){
+    console.log(number)
+  }
+
 </script>
 
 
