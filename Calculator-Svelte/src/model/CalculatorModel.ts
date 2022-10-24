@@ -21,7 +21,7 @@ export default class CalculatorModel {
     return this.#value?.replace(".", "," || "0");
   }
 
-  numbertyped(newValue: string) {
+  numberTyped(newValue: string) {
     return new CalculatorModel(
       this.#cleanDisplay || !this.#value ? newValue : this.#value + newValue,
       this.#accumulator,
