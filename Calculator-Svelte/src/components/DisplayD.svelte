@@ -1,10 +1,10 @@
 <script lang="ts">
-  export let valueD: string
+  export let value: string
 
-  $: changeFontSize = valueD.length > 20 ? 'small' : `s-${valueD.length}`// <--- causing trouble in code looking forward to solve this
+  $: changeFontSize = value.length > 20 ? 'small' : `s-${value.length}`// <--- causing trouble in code looking forward to solve this
 </script>
 
-<div class={`displayD ${changeFontSize}`}><span>{valueD}</span></div>
+<div class={`displayD ${changeFontSize}`}><span>{value}</span></div>
 
 
 <style>
