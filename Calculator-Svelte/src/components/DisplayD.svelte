@@ -1,7 +1,8 @@
 <script lang="ts">
   export let value: string
-
   $:changeFontSize = value.length > 20 ? 'small' : `s-${value.length}`
+  
+  
 </script>
 
 <div class={`displayD ${changeFontSize}`}>
