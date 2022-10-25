@@ -1,17 +1,17 @@
 <script lang="ts">
-  
+  import CalculatorModel from "../model/CalculatorModel";
 
   import Button from "./Button.svelte"
   import Line from "./Line.svelte"
   import DisplayD from "./DisplayD.svelte"
 
-
+let calc = new CalculatorModel()
 const numberTyped = (num:string)=> calc = calc.numberTyped(num)
 
 </script>
 
 <div class="calculator">
-  <DisplayD value="12345"/>
+  <DisplayD value={calc.value}/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
