@@ -1,5 +1,7 @@
 <Script lang="ts">
   export let valor: string
+
+  $: tamanhoFonte = valor.length > 20 ? 'pequena' : `s-${valor}`
 </Script>
 
 
