@@ -11,7 +11,7 @@
 </script>
 
 <div class="calculator">
-  <Display valor="0123456789 0123456789"/>
+  <Display valor="0"/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
