@@ -13,7 +13,7 @@
 </script>
 
 <div class="calculator">
-  <DisplayD value='0123456789 0123456789'/>
+  <DisplayD value='0'/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
