@@ -1,8 +1,8 @@
-<Script lang="ts">
+<script lang="ts">
   export let valor: string
 
-  $: tamanhoFonte = valor.length > 20 ? 'pequena' : `s-${valor}`
-</Script>
+$: tamanhoFonte = valor.length > 20 ? 'pequena' : `s-${valor.length}`
+</script>
 
 
 <div class={`display ${tamanhoFonte}`}>
