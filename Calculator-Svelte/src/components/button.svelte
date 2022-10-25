@@ -7,7 +7,7 @@ export let highlight: boolean = false
 export let onClick: (value: string)=> void = ()=>{}
 </script>
 
-<button class="button" on:click={() => onClick('text')}
+<button class="button" on:click={() => onClick(text)}
 class:triple 
 class:duble 
 class:operational 
