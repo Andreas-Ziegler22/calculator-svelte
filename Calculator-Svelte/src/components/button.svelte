@@ -4,10 +4,11 @@ export let triple: boolean = false
 export let duble: boolean = false
 export let operational: boolean = false
 export let highlight: boolean = false
-export let onClick: (value: string)=> void = ()=>{}
+export let onClick: (valueD: string)=> void = ()=>{}
 </script>
 
-<button class="button" on:click={() => onClick(text)}
+<button class="button"
+  on:click={() => onClick(text)}
 class:triple 
 class:duble 
 class:operational 

@@ -1,13 +1,14 @@
 <script lang="ts">
   import CalculatorModel from "../model/CalculatorModel";
 
+
   import Button from "./Button.svelte"
   import Line from "./Line.svelte"
   import DisplayD from "./DisplayD.svelte"
 
 let calc = new CalculatorModel()
 
-const numberTyped = (num: string) => calc = calc.numberTyped(num)
+  const numberTyped = (num: string) => calc = calc.numberTyped(num)
   const dotNotationTyped = () => calc = calc.dotNotationTyped()
 
 </script>
