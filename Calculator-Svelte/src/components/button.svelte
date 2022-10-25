@@ -32,11 +32,11 @@ class:highlight>
   flex-basis: 50%;
 }
 .operational{
-  background-color: orange;
-  color: #fff;
+  background-color: yellow;
+  color: #000;
 }
 .highlight{
-  background-color: red;
+  background-color:#000;
   color: #fff;
 }
 
