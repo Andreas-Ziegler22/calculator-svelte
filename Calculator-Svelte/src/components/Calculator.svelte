@@ -5,22 +5,26 @@
   import Display from "./Display.svelte";
   import Line from "./Line.svelte"
 
+let valor = '0'
 
+function numeroDigitado(numero: string){
+  valor += numero
+}
 
 
 </script>
 
 <div class="calculator">
-  <Display valor="0"/>
+  <Display valor={valor}/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
     
   </Line>
   <Line>
-  <Button text="7" />
-  <Button text="8" />
-  <Button text="9" />
+  <Button text="7" onClick={numeroDigitado}/>
+  <Button text="8" onClick={numeroDigitado}/>
+  <Button text="9" onClick={numeroDigitado}/>
   <Button operational text="*"/>
 </Line>
 <Line>
