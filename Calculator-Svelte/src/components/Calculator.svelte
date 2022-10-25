@@ -9,6 +9,8 @@
 
   let calc = new CalculatorModel()
 
+  const numeroDigitado = (num:string )=> calc = calc.numeroDigitado(num)
+
 
 </script>
 
@@ -20,25 +22,25 @@
     
   </Line>
   <Line>
-  <Button text="7" />
-  <Button text="8" />
-  <Button text="9" />
+  <Button text="7" onClick={numeroDigitado}/>
+  <Button text="8" onClick={numeroDigitado}/>
+  <Button text="9" onClick={numeroDigitado}/>
   <Button operational text="*"/>
 </Line>
 <Line>
-  <Button text="4" />
-  <Button text="5" />
-  <Button text="6" />
+  <Button text="4" onClick={numeroDigitado}/>
+  <Button text="5" onClick={numeroDigitado}/>
+  <Button text="6" onClick={numeroDigitado}/>
   <Button operational text="+"/>
 </Line>
 <Line>
-  <Button text="1" />
-  <Button text="2" />
-  <Button text="3" />
+  <Button text="1" onClick={numeroDigitado}/>
+  <Button text="2" onClick={numeroDigitado}/>
+  <Button text="3" onClick={numeroDigitado}/>
   <Button operational text="-"/>
 </Line>
 <Line>
-  <Button text="0" duble />
+  <Button text="0" duble onClick={numeroDigitado}/>
   <Button text=","  />
   <Button highlight text="="/>
 </Line>
