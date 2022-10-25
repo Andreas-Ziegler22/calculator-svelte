@@ -1,30 +1,28 @@
 <script lang="ts">
+  import CalculatorModel from "../model/CalculatorModel";
+
 
 
   import Button from "./Button.svelte"
   import Display from "./Display.svelte";
   import Line from "./Line.svelte"
 
-let valor = '0'
-
-function numeroDigitado(numero: string){
-  valor += numero
-}
+  let calc = new CalculatorModel()
 
 
 </script>
 
 <div class="calculator">
-  <Display valor={valor}/>
+  <Display valor={calc.valor}/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
     
   </Line>
   <Line>
-  <Button text="7" onClick={numeroDigitado}/>
-  <Button text="8" onClick={numeroDigitado}/>
-  <Button text="9" onClick={numeroDigitado}/>
+  <Button text="7" />
+  <Button text="8" />
+  <Button text="9" />
   <Button operational text="*"/>
 </Line>
 <Line>

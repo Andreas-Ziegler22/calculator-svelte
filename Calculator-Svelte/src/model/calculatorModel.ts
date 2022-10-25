@@ -18,7 +18,7 @@ export default class CalculatorModel {
     this.#operacao = operacao;
   }
   get valor() {
-    return this.#valor.replace(".", ",") || "0";
+    return this.#valor?.replace(".", ",") || "0";
   }
 
   numeroDigitado(novoValor: string) {
