@@ -4,7 +4,7 @@ export let triple: boolean = false
 export let duble: boolean = false
 export let operational: boolean = false
 export let highlight: boolean = false
-export let onClick: (valueD: string)=> void = ()=>{}
+export let onClick: (value: string)=> void = ()=>{}
 </script>
 
 <button class="button"

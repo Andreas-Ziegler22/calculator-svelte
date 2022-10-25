@@ -1,46 +1,45 @@
 <script lang="ts">
-  import CalculatorModel from "../model/CalculatorModel";
+  
 
 
   import Button from "./Button.svelte"
   import Line from "./Line.svelte"
   import DisplayD from "./DisplayD.svelte"
 
-let calc = new CalculatorModel()
 
-  const numberTyped = (num: string) => calc = calc.numberTyped(num)
-  const dotNotationTyped = () => calc = calc.dotNotationTyped()
+
+  
 
 </script>
 
 <div class="calculator">
-  <DisplayD valueD={calc.value}/>
+  <DisplayD value='0123456789 0123456789'/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
     
   </Line>
   <Line>
-  <Button text="7" onClick={numberTyped}/>
-  <Button text="8" onClick={numberTyped}/>
-  <Button text="9" onClick={numberTyped}/>
+  <Button text="7" />
+  <Button text="8" />
+  <Button text="9" />
   <Button operational text="*"/>
 </Line>
 <Line>
-  <Button text="4" onClick={numberTyped}/>
-  <Button text="5" onClick={numberTyped}/>
-  <Button text="6" onClick={numberTyped}/>
+  <Button text="4" />
+  <Button text="5" />
+  <Button text="6" />
   <Button operational text="+"/>
 </Line>
 <Line>
-  <Button text="1" onClick={numberTyped}/>
-  <Button text="2" onClick={numberTyped}/>
-  <Button text="3" onClick={numberTyped}/>
+  <Button text="1" />
+  <Button text="2" />
+  <Button text="3" />
   <Button operational text="-"/>
 </Line>
 <Line>
-  <Button text="0" duble onClick={numberTyped}/>
-  <Button text="," onClick={dotNotationTyped} />
+  <Button text="0" duble />
+  <Button text=","  />
   <Button highlight text="="/>
 </Line>
 </div>
