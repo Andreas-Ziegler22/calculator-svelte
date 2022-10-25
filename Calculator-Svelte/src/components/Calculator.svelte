@@ -12,6 +12,7 @@ const numberTyped = (num:string)=> calc = calc.numberTyped(num)
 
 <div class="calculator">
   <DisplayD value={calc.value}/>
+  console.log(value={calc.value})
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
