@@ -1,4 +1,5 @@
 const nao_limpar_tela = false;
+const limpar_tela = true;
 
 export default class CalculatorModel {
   #valor: string;
@@ -36,6 +37,28 @@ export default class CalculatorModel {
       this.#acumulador,
       this.#operacao,
       nao_limpar_tela
+    );
+  }
+  clean() {
+    return new CalculatorModel();
+  }
+  operacaoDigitada(proximaOperacao: string) {
+    return this.calcular(proximaOperacao);
+  }
+
+  calcular(proximaOperacao: string = null) {
+    const acumulador = !this.#operacao
+      ? parseFloat(this.#valor)
+      : eval(`${this.#acumulador} 
+    ${this.#operacao} 
+    ${this.#valor}`);
+    const valor = !this.#operacao ? this.#valor : `${acumulador}`;
+
+    return new CalculatorModel(
+      valor,
+      acumulador,
+      proximaOperacao,
+      proximaOperacao ? limpar_tela : nao_limpar_tela
     );
   }
 }

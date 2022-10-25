@@ -13,6 +13,7 @@
 
   const numeroDigitado = (num:string )=> calc = calc.numeroDigitado(num)
   const pontoDigitado = () => calc = calc.pontoDigitado()
+  const clean = () => calc = calc.clean()
 
 
 </script>
@@ -20,7 +21,7 @@
 <div class="calculator">
   <Display valor={calc.valor}/>
   <Line>
-    <Button highlight text="AC" triple/>
+    <Button highlight text="AC" triple onClick={clean}/>
     <Button operational text="/"/>
     
   </Line>
