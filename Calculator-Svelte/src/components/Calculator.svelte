@@ -5,43 +5,41 @@
   import Button from "./Button.svelte"
   import Line from "./Line.svelte"
   import DisplayD from "./DisplayD.svelte"
+  import CalculatorModel from "../model/CalculatorModel";
 
 
-
-  let value = '0'
-  function numberTyped(number:string){
-    value += number
-  }
+let calc = new CalculatorModel()
+const numberTyped = (num:string)=> calc = calc.numberTyped(num)
 
 </script>
 
 <div class="calculator">
-  <DisplayD value={value}/>
+  <DisplayD value={calc.value}/>
   <Line>
     <Button highlight text="AC" triple/>
     <Button operational text="/"/>
     
   </Line>
   <Line>
-  <Button text="7" onClick={numberTyped}/>
-  <Button text="8" onClick={numberTyped}/>
-  <Button text="9" onClick={numberTyped}/>
+  <Button text="7" />
+  <Button text="8" />
+  <Button text="9" />
   <Button operational text="*"/>
 </Line>
 <Line>
-  <Button text="4" onClick={numberTyped}/>
-  <Button text="5" onClick={numberTyped}/>
-  <Button text="6" onClick={numberTyped}/>
+  <Button text="4" />
+  <Button text="5" />
+  <Button text="6" />
   <Button operational text="+"/>
 </Line>
 <Line>
-  <Button text="1" onClick={numberTyped}/>
-  <Button text="2" onClick={numberTyped}/>
-  <Button text="3" onClick={numberTyped}/>
+  <Button text="1" />
+  <Button text="2" />
+  <Button text="3" />
   <Button operational text="-"/>
 </Line>
 <Line>
-  <Button text="0" duble onClick={numberTyped}/>
+  <Button text="0" duble />
   <Button text=","  />
   <Button highlight text="="/>
 </Line>
