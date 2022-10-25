@@ -8,7 +8,7 @@
 let calc = new CalculatorModel()
 
 const numberTyped = (num: string) => calc = calc.numberTyped(num)
-  const dotNotationTyped = (op: string) => calc = calc.dotNotationTyped(op)
+  const dotNotationTyped = () => calc = calc.dotNotationTyped()
 
 </script>
 
