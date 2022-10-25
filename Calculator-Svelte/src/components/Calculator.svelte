@@ -1,15 +1,18 @@
 <script lang="ts">
-  import CalculatorModel from "../model/CalculatorModel";
+  import CalculatorModel from "../model/calculatorModel";
+
+ 
 
 
 
-  import Button from "./Button.svelte"
+  import Button from "./Button.svelte";
   import Display from "./Display.svelte";
-  import Line from "./Line.svelte"
+  import Line from "./Line.svelte";
 
   let calc = new CalculatorModel()
 
   const numeroDigitado = (num:string )=> calc = calc.numeroDigitado(num)
+  const pontoDigitado = () => calc = calc.pontoDigitado()
 
 
 </script>
@@ -41,7 +44,7 @@
 </Line>
 <Line>
   <Button text="0" duble onClick={numeroDigitado}/>
-  <Button text=","  />
+  <Button text=","  onClick={pontoDigitado}/>
   <Button highlight text="="/>
 </Line>
 </div>

@@ -29,4 +29,13 @@ export default class CalculatorModel {
       nao_limpar_tela
     );
   }
+
+  pontoDigitado() {
+    return new CalculatorModel(
+      this.#valor?.includes(".") ? this.#valor : this.#valor + ".",
+      this.#acumulador,
+      this.#operacao,
+      nao_limpar_tela
+    );
+  }
 }
