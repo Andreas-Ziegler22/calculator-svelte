@@ -5,7 +5,7 @@
 </Script>
 
 
-<div class="display">
+<div class={`display ${tamanhoFonte}`}>
   <span>{valor}</span>
 </div>
 
