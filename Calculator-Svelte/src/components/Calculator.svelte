@@ -12,6 +12,8 @@
   let calc = new CalculatorModel()
 
   const numeroDigitado = (num:string )=> calc = calc.numeroDigitado(num)
+  const operacaoDigitada = (op:string)=> calc = calc.operacaoDigitada(op)
+  const calcular = () => calc = calc.calcular()
   const pontoDigitado = () => calc = calc.pontoDigitado()
   const clean = () => calc = calc.clean()
 
@@ -22,31 +24,31 @@
   <Display valor={calc.valor}/>
   <Line>
     <Button highlight text="AC" triple onClick={clean}/>
-    <Button operational text="/"/>
+    <Button operational text="/" onClick={operacaoDigitada}/>
     
   </Line>
   <Line>
   <Button text="7" onClick={numeroDigitado}/>
   <Button text="8" onClick={numeroDigitado}/>
   <Button text="9" onClick={numeroDigitado}/>
-  <Button operational text="*"/>
+  <Button operational text="*" onClick={operacaoDigitada}/>
 </Line>
 <Line>
   <Button text="4" onClick={numeroDigitado}/>
   <Button text="5" onClick={numeroDigitado}/>
   <Button text="6" onClick={numeroDigitado}/>
-  <Button operational text="+"/>
+  <Button operational text="+" onClick={operacaoDigitada}/>
 </Line>
 <Line>
   <Button text="1" onClick={numeroDigitado}/>
   <Button text="2" onClick={numeroDigitado}/>
   <Button text="3" onClick={numeroDigitado}/>
-  <Button operational text="-"/>
+  <Button operational text="-" onClick={operacaoDigitada}/>
 </Line>
 <Line>
   <Button text="0" duble onClick={numeroDigitado}/>
   <Button text=","  onClick={pontoDigitado}/>
-  <Button highlight text="="/>
+  <Button highlight text="=" onClick={calcular}/>
 </Line>
 </div>
 
