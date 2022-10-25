@@ -1,9 +1,9 @@
 <script lang="ts">
+  import CalculatorModel from "../model/CalculatorModel";
 
   import Button from "./Button.svelte"
   import Line from "./Line.svelte"
   import DisplayD from "./DisplayD.svelte"
-  import CalculatorModel from "../model/CalculatorModel";
 
 let calc = new CalculatorModel()
 

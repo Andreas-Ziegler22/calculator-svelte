@@ -1,4 +1,5 @@
 const no_clean_display = false;
+const clean_display = true;
 
 export default class CalculatorModel {
   #value: string;
